@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Account Generator</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; background-color: #121212; color: #fff; }
+        input, button { margin: 10px; padding: 12px 20px; font-size: 16px; border-radius: 5px; border: none; }
+        input { background: #222; color: #fff; border: 1px solid #444; }
+        button { background: #007bff; color: white; cursor: pointer; font-weight: bold; }
+        button:hover { background: #0056b3; }
+        #downloadBtn { background: #28a745; display: none; } /* زر التحميل مخفي في البداية */
+        #downloadBtn:hover { background: #218838; }
+        pre { text-align: left; background: #1e1e1e; padding: 15px; border-radius: 5px; border: 1px solid #333; max-width: 600px; margin: 20px auto; overflow-x: auto; color: #a9dc76; }
+    </style>
+</head>
+<body>
+
+    <h2>Generate Minecraft accounts.json</h2>
+    <p style="color: #bbb;">خاص بإصدار Prism Launcher 9.4 (MSVC-Portable)</p>
+    
+    <input type="text" id="username" placeholder="Enter Username">
+    <button onclick="generateJSON()">Generate</button>
+    
+    <button id="downloadBtn" onclick="downloadJSON()">📥 Download accounts.json</button>
+    
+    <pre id="output"></pre>
+
+    <script>
+        let generatedData = null; // متغير لحفظ البيانات مؤقتاً للتحميل
+
+        function generateJSON() {
+            const username = document.getElementById('username').value.trim();
+            if (!username) {
+                alert('Please enter a username');
+                return;
+            }
+
+            // توليد الـ ID والـ Token بنفس منطق الكود الخاص بك
+            const accountData = {
+                "accounts": [
+                    {
+                        "active": true,
+                        "entitlement": { "canPlayMinecraft": true, "ownsMinecraft": true },
+                        "profile": {
+                            "capes": [],
+                            "id": Math.random().toString(36).substring(2, 34),
+                            "name": username,
+                            "skin": { "id": "", "url": "", "variant": "" }
+                        },
+                        "type": "Offline",
+                        "ygg": {
+                            "extra": { "clientToken": Math.random().toString(36).substring(2, 34), "userName": username },
+                            "iat": Math.floor(Date.now() / 1000),
+                            "token": "0"
+                        }
+                    }
+                ],
+                "formatVersion": 3
+            };
+            
+            generatedData = accountData; // حفظ البيانات للتحميل
+            
+            // عرض النص على الشاشة
+            document.getElementById('output').textContent = JSON.stringify(accountData, null, 4);
+            
+            // إظهار زر التحميل بعد التوليد بنجاح
+            document.getElementById('downloadBtn').style.display = 'inline-block';
+        }
+
+        // دالة تحميل الملف المضافة
+        function downloadJSON() {
+            if (!generatedData) return;
+            
+            // تحويل البيانات إلى نص ونصيغة Blob
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(generatedData, null, 4));
+            const downloadAnchor = document.createElement('a');
+            
+            downloadAnchor.setAttribute("href", dataStr);
+            downloadAnchor.setAttribute("download", "accounts.json"); // اسم الملف عند التحميل
+            document.body.appendChild(downloadAnchor);
+            
+            downloadAnchor.click(); // تنفيذ عملية الضغط التلقائي للتحميل
+            downloadAnchor.remove(); // حذف العنصر المؤقت
+        }
+    </script>
+
+</body>
+</html>
