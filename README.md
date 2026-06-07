@@ -1,36 +1,36 @@
-ONLY FOR 9.4
-  ## 📥 تحميل المتطلبات وموقع التوليد (Downloads & Online Generator)
+ (ONLY FOR 9.4)
+  ## 📥 Downloads & Online Generator
   
-  لضمان عمل السكربت بنجاح، يمكنك استخدام الموقع المباشر أو تحميل الإصدار المحدد المخصص له:
+  To ensure the script works correctly, you can use the online generator or download the specific launcher version required:
   
-  | الملف / الموقع | رابط الوصول والتحميل (Links) | النوع (Type) |
+  | File / Site | Access & Download Link | Type |
   | :--- | :--- | :--- |
-  | **موقع التوليد الأونلاين** | [🔗 اضغط هنا لفتح الموقع المباشر](https://qqq-mc.pages.dev/) | أداة توليد الحسابات السريعة |
-  | **Prism Launcher 9.4** | [🔗 اضغط هنا للتحميل المباشر](https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Windows-MSVC-Portable-9.4.zip) | النسخة المحمولة الرسمية (Portable) |
-  | **سكربت التفعيل (QOQ)** | [قم بتحميله من الأعلى من ملفات المستودع] | `QOQ.bat` Generator |
+  | **Online Account Generator** | [🔗 Click here to open the live site](https://qqq-mc.pages.dev/) | Quick Web-based Generator |
+  | **Prism Launcher 9.4** | [🔗 Click here for direct download](https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Windows-MSVC-Portable-9.4.zip) | Official Portable Version (Portable) |
+  | **Activation Script (QOQ)** | [Download it from the repository files above] | `QOQ.bat` Local Generator |
   
   ---
   
-  ## 🚀 طريقة الاستخدام والتطبيق (How to Use)
+  ## 🚀 How to Use
   
-  ### 📂 الخطوة 1: استخراج اللانشر
-  1. قم بتحميل ملف الـ Zip الخاص باللانشر من الجدول أعلاه.
-  2. فك الضغط عن مجلد `PrismLauncher-Windows-MSVC-Portable-9.4`.
+  ### 📂 Step 1: Extract the Launcher
+  1. Download the launcher's Zip file from the table above.
+  2. Extract the contents of the `PrismLauncher-Windows-MSVC-Portable-9.4` folder.
   
-  ### 🛠️ الخطوة 2: إنشاء ملف الحساب (accounts.json)
-  يمكنك اختيار إحدى الطريقتين التاليتين لإنشاء الحساب:
+  ### 🛠️ Step 2: Create the Account File (accounts.json)
+  You can choose one of the following two methods to generate your offline account:
   
-  * **الطريقة الأولى (عبر الموقع - الأسهل والأسرع):**
-    1. افتح رابط **موقع التوليد الأونلاين** الموجود في الجدول أعلاه.
-    2. اكتب اسم المستخدم (Username) الذي تريده واضغط على زر **Generate**.
-    3. اضغط على زر **Download accounts.json** الأخضر لتحميل الملف مباشرة.
-    4. انقل الملف الذي قمت بتحميله وضعه داخل مجلد اللانشر الرئيسي المستخرج.
+  * **Method 1 (Via the Website - Easiest & Fastest):**
+    1. Open the **Online Account Generator** link from the table above (`qqq-mc.pages.dev`).
+    2. Enter the **Username** you want to play with and click the **Generate** button.
+    3. Click the green **Download accounts.json** button to save the file to your computer.
+    4. Move the downloaded file and place it directly inside the main extracted launcher folder.
   
-  * **الطريقة الثانية (عبر سكربت الـ Batch):**
-    1. ضع ملف `QOQ.bat` داخل مجلد اللانشر الرئيسي (بجانب ملف `PrismLauncher.exe`).
-    2. اضغط مرتين لتشغيل ملف `QOQ.bat`.
-    3. أدخل اسم المستخدم الذي ترغب باللعب به واضغط `Enter` ليتم إنشاء الملف تلقائياً.
+  * **Method 2 (Via the Batch Script):**
+    1. Place the `QOQ.bat` file inside the main launcher folder (right next to `PrismLauncher.exe`).
+    2. Double-click to run the `QOQ.bat` script.
+    3. Enter the username you wish to use, press `Enter`, and the file will be generated automatically.
   
-  ### 🎲 الخطوة 3: اللعب
-  1. افتح لانشر `PrismLauncher.exe`.
-  2. اذهب إلى الحسابات (Accounts)، وستجد حسابك الأوفلاين مضافاً وجاهزاً للاستخدام مباشرة!
+  ### 🎲 Step 3: Launch and Play
+  1. Open the launcher by running `PrismLauncher.exe`.
+  2. Navigate to **Accounts** in the top section, and you will find your offline (cracked) account added, activated, and ready to play!
