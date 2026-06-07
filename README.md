@@ -5,7 +5,7 @@ ONLY FOR 9.4
   
   | الملف / الموقع | رابط الوصول والتحميل (Links) | النوع (Type) |
   | :--- | :--- | :--- |
-  | **موقع التوليد الأونلاين** | [🔗 اضغط هنا لفتح الموقع المباشر](https://offline-prism.netlify.app/) | أداة توليد الحسابات السريعة |
+  | **موقع التوليد الأونلاين** | [🔗 اضغط هنا لفتح الموقع المباشر](https://qqq-mc.pages.dev/) | أداة توليد الحسابات السريعة |
   | **Prism Launcher 9.4** | [🔗 اضغط هنا للتحميل المباشر](https://github.com/PrismLauncher/PrismLauncher/releases/download/9.4/PrismLauncher-Windows-MSVC-Portable-9.4.zip) | النسخة المحمولة الرسمية (Portable) |
   | **سكربت التفعيل (QOQ)** | [قم بتحميله من الأعلى من ملفات المستودع] | `QOQ.bat` Generator |
   
